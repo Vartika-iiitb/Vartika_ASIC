@@ -19,6 +19,11 @@ $ sudo make install
 
 ```
 Below is the screenshot showing successful installation:
+![Screenshot from 2023-07-31 10-50-46](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/5ab5283b-be3e-4487-b8ac-01fb86b8d2b5)
+
+Day 0
+YoDay 0
+Yo
 
 Below is the Screenshot showing successful Launch:
 ![Screenshot from 2023-07-31 10-50-55](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/e48b05c6-c712-4b20-b8ca-6b21b25bf48c)
