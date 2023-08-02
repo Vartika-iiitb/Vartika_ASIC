@@ -33,8 +33,11 @@ Below is the Screenshot showing successful Launch:
   iverilog
   </summary>
   I installed iverilog using the following comment
+
+  
   ```
   
   sudo apt-get install iverilog
+
 
   ```
