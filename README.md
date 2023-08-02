@@ -42,3 +42,22 @@ Below is the Screenshot showing successful Launch:
 
   ```
 ![Screenshot from 2023-08-02 08-28-38](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/85790984-eac7-47e0-81a3-46f3e56ca363)
+
+</details>
+
+<details>
+  <summary>
+    I installed gtkwave using the following command:
+
+    ```
+    
+    sudo apt-get install gtkwave
+
+    
+    ```
+    
+  ![Screenshot from 2023-08-02 08-29-09](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/13b0a958-feba-4a17-90f9-45343e05da84)
+
+    
+  </summary>
+</details>
