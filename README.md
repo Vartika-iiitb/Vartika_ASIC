@@ -47,6 +47,8 @@ Below is the Screenshot showing successful Launch:
 
 <details>
   <summary>
+    gtkwave
+  </summary>
     I installed gtkwave using the following command:
 
     ```
@@ -59,5 +61,5 @@ Below is the Screenshot showing successful Launch:
   ![Screenshot from 2023-08-02 08-29-09](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/13b0a958-feba-4a17-90f9-45343e05da84)
 
     
-  </summary>
+  
 </details>
