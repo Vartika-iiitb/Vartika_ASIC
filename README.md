@@ -50,10 +50,12 @@ Below is the Screenshot showing successful Launch:
     gtkwave
   </summary>
     I installed gtkwave using the following command:
+    
 
     ```
     
     sudo apt-get install gtkwave
+    
 
     
     ```
