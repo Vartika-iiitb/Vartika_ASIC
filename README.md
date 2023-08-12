@@ -81,8 +81,6 @@ sudo apt-get install iverilog
 ![Screenshot from 2023-08-11 16-07-16](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/3a9cf4f3-e46a-4fa8-b539-74ae266af316)
 
 
-<summary>
-  
-</summary>
+
   
 </details>
