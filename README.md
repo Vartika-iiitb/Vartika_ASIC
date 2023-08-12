@@ -64,8 +64,7 @@ sudo apt-get install iverilog
     
   
 </details>
-# Week 2
-# Day 1
+# WEEK 2
 <details>
   <summary>
     
