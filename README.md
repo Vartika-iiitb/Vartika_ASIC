@@ -1,7 +1,7 @@
 # Day 0
 <details>
   <summary>
-    # Yosys
+    Yosys
   </summary>
   I installed Yosys using the following commands:
 
@@ -64,7 +64,8 @@ sudo apt-get install iverilog
     
   
 </details>
-
+# Week 2
+# Day 1
 <details>
   <summary>
     
