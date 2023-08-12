@@ -64,7 +64,10 @@ sudo apt-get install iverilog
     
   
 </details>
+
 # WEEK 2
+
+# Day 1: Introduction to iverilog and Yosys
 <details>
   <summary>
     
