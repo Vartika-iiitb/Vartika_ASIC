@@ -1,3 +1,4 @@
+# WEEK 1
 # Day 0
 <details>
   <summary>
@@ -74,10 +75,14 @@ sudo apt-get install iverilog
   </summary>
 
   
-  Icarus Verilog is an implementation of the Verilog hardware description language compiler that generates netlists in the desired format (EDIF). It supports the 1995, 2001 and 2005 versions of the standard, portions of SystemVerilog, and some extensions. 
+  Icarus Verilog is an implementation of the Verilog hardware description language compiler that generates netlists in the desired format (EDIF). It supports the 1995, 2001 and 2005 versions of the standard, portions of SystemVerilog, and some extensions.Verilog Test benches are used to simulate and analyze designs without the need for any physical hardware or any hardware device. The most significant advantage of this is that you can inspect every signal /variable (reg, wire in Verilog) in the design.
+  
+  Following Screenshot shows the correct Mapping of simulation flow in iverilog:
 ![Screenshot from 2023-08-11 16-07-16](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/3a9cf4f3-e46a-4fa8-b539-74ae266af316)
 
 
-
+<summary>
+  
+</summary>
   
 </details>
