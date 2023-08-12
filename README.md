@@ -67,9 +67,17 @@ sudo apt-get install iverilog
 
 # WEEK 2
 
-# Day 1: Introduction to iverilog and Yosys
+# Day 1: Introduction to Icarus Verilog and Yosys
 <details>
   <summary>
-    
+    Introduction to iverilog
   </summary>
+
+  
+  Icarus Verilog is an implementation of the Verilog hardware description language compiler that generates netlists in the desired format (EDIF). It supports the 1995, 2001 and 2005 versions of the standard, portions of SystemVerilog, and some extensions. 
+![Screenshot from 2023-08-11 16-07-16](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/3a9cf4f3-e46a-4fa8-b539-74ae266af316)
+
+
+
+  
 </details>
