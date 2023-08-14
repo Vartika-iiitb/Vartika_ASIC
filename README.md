@@ -136,4 +136,41 @@ Following flow graph shows the path of converting RTL design into its respective
 
 ![Screenshot from 2023-08-14 23-05-40](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/01226908-488c-4b7d-927a-437e3a21f283)
 
+
+Command
+change the working directory in which we have all the verilog files and invoke yosys using the following command
+
+```
+
+cd /vlsi/sky130RTLDesignAndSynthesisWorkshop/verilog_files
+vartika@vartika:~/vlsi/sky130RTLDesignAndSynthesisWorkshop/verilog_files$ yosys
+yosys> read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+yosys> read_verilog good_mux.v
+yosys> synth -top good_mux
+
+```
+After executing this, we will get the following output:
+
+![Screenshot from 2023-08-14 22-53-35](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/2d8ea14a-5838-4789-86e9-3f0034b0b070)
+
+For generating the Netlist we use the following command:
+
+Command
+
+```
+
+yosys> abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+yosys> show
+
+```
+Following command is used for writing the netlist and viewing it:
+```
+
+yosys> write_verilog -noattr good_mux_netlist.v
+yosys> !gvim good_mux_netlist.v
+
+```
+![Screenshot from 2023-08-14 22-57-41](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/31da9143-8e89-4876-ae61-bf15773c7352)
+
+
 </details>
