@@ -138,6 +138,7 @@ b) slower cells are used at non-critical path where we donot require high perfor
 <summary>
   Introduction to Yosys
 </summary>
+
 # Synthesis
 synthesis is used for converting the RTL level design to gate level design. The design are converted into gates and the connections are made between the gates and hence this file is gaiven out as a file called Netlist.
 
