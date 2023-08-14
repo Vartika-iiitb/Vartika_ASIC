@@ -1,3 +1,9 @@
+# Vartika_Tapeout_Process
+<details>
+This Github Repository demonstrates the procedures and steps which is being followed during the Tapeout Process.
+</details>
+
+# Tapeout Process
 # WEEK 1
 # Day 0
 <details>
