@@ -201,6 +201,12 @@ In the following example, inside the Lib file there are 2^5 (32) possible combin
 
 
   ![Screenshot from 2023-08-15 01-50-24](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/e6da3594-87c3-4e51-9e22-12505bf85ec5)
+  
+
+  Here as we can see from the screenshot given below that as we move from left towards right the Area is increasing. This means that we need much wider transistors to use over there. Although wider cells are going to be faster when compared to the small cell but it's power consumption is going to be more but on the contrary it's delay is going to be less.
+
+  ![Screenshot from 2023-08-15 01-56-57](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/32736181-e631-4c10-b811-7365e16c673e)
+
 
 </details>
 
