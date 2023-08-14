@@ -193,6 +193,15 @@ yosys> !gvim good_mux_netlist.v
   <summary>
     Introduction to Timing.libs
   </summary>
+  This lab teaches us how does .lib looks like and the information that it contains within it.
+  
+![WhatsApp Image 2023-08-15 at 01 33 17](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/fbfd4a95-0536-409d-8957-c2d1961c42af)
+
+In the following example, inside the Lib file there are 2^5 (32) possible combinations are present which shows all the respective values of voltage, Temperature etc.
+
+
+  ![Screenshot from 2023-08-15 01-50-24](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/e6da3594-87c3-4e51-9e22-12505bf85ec5)
+
 </details>
 
 <details>
