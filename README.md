@@ -135,6 +135,9 @@ a) Faster the cells lesser is the delay, but for that we need wider transistors 
 
 b) slower cells are used at non-critical path where we donot require high performance where delay is not an issue so our power dissipation and area will also be minimum. But more use of slower cells will make our circuit sluggish
 
+</details>
+
+<details>
 <summary>
   Introduction to Yosys
 </summary>
