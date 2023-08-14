@@ -84,11 +84,34 @@ sudo apt-get install iverilog
 Command to view the total number of folders present inside the directory.
 
 ```
-cd sky130RTLDesignAndSynthesisWorkshop
+cd verilog_files
 ls -l
 
 ```
 
 ![Screenshot from 2023-08-14 11-09-45](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/5a1f3d7b-d181-407b-bd5f-e9eb96c1d077)
+
+  # Demonstration of Icarus verilog and Gtkwave
+
+  To run the iverilog command and for simulationg the RTL design and the Test Bench we use the following command.
   
+```
+  iverilog good_mux.v tb_good_mux.v
+  ls -l
+
+```
+For getting the output, the following command is used:
+```
+./a.out
+
+```
+Command for viewing and analyzing the waveform:
+
+```
+gtkwave tb_good_mux.vcd
+
+```
+![Screenshot from 2023-08-14 11-30-52](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/18802ea8-70f2-4212-89f8-f12b192a9286)
+
+
 </details>
