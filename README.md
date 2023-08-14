@@ -283,7 +283,7 @@ yosys> !gvim good_mux_netlist.v
 </details>
 
 # References
-(https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop)
+https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop
 
 
 
