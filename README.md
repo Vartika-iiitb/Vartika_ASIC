@@ -81,6 +81,16 @@ sudo apt-get install iverilog
 ![Screenshot from 2023-08-11 16-07-16](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/3a9cf4f3-e46a-4fa8-b539-74ae266af316)
 
 
+Command to view the total number of folders present inside the directory.
+
+```
+cd sky130RTLDesignAndSynthesisWorkshop
+ls -l
+
+```
+
+![Screenshot from 2023-08-14 11-09-45](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/5a1f3d7b-d181-407b-bd5f-e9eb96c1d077)
+
 
   
 </details>
