@@ -90,7 +90,5 @@ ls -l
 ```
 
 ![Screenshot from 2023-08-14 11-09-45](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/5a1f3d7b-d181-407b-bd5f-e9eb96c1d077)
-
-
   
 </details>
