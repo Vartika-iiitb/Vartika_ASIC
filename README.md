@@ -121,5 +121,13 @@ The following Screenshot shows the flow of the synthesizer.
 ![Screenshot from 2023-08-14 12-15-06](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/07165fb6-9a00-4deb-828c-aa63bdbd17c6)
 ![Screenshot from 2023-08-14 12-15-17](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/f09a9174-8f89-4ff7-8cf3-89f7274fa90a)
 
+# .lib
+It is a collection of logical modules which includes basic logic gates like AND, OR, NOT etc. It may contain different flavours of the same gate such as 2 input, 3 input and gate with different speed i.e., ranging from slow to fast.
+So based on our requirement we use different flavours of cell.
+
+a) Faster the cells lesser is the delay, but for that we need wider transistors so the power dissipation will be more too.So faster cells donot come free,they come at penalty of area and power.More use of faster cell will result in bad circuit with large area and power dissipation.
+
+b) slower cells are used at non-critical path where we donot require high performance where delay is not an issue so our power dissipation and area will also be minimum. But more use of slower cells will make our circuit sluggish
+
 
 </details>
