@@ -172,5 +172,4 @@ yosys> !gvim good_mux_netlist.v
 ```
 ![Screenshot from 2023-08-14 22-57-41](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/31da9143-8e89-4876-ae61-bf15773c7352)
 
-
 </details>
