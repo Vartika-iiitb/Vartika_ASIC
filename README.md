@@ -209,3 +209,78 @@ yosys> !gvim good_mux_netlist.v
   
 </details>
 
+# Day 3 - Combinational and Sequential Optimizations
+
+<details>
+  <summary>
+    Introduction to Optimizations
+  </summary>
+</details>
+
+<details>
+<summary>
+  Combinational Logic Optimizations
+</summary>
+  
+</details>
+
+<details>
+<summary>
+   Sequential Logic Optimizations
+</summary>
+  
+</details>
+
+<details>
+<summary>
+  Sequential Optimizations for unused Outputs
+</summary>
+  
+</details>
+
+# Day 4 - GLS, Blocking vs Non Blocking and synthesis simulation mismatch
+
+<details>
+  <summary>
+    GLS, synthesis simulation mismatch and blocking/ nonblocking statements
+  </summary>
+</details>
+
+<details>
+<summary>
+  Labs on GLS, synthesis simulation mismatch
+</summary>
+  
+</details>
+
+<details>
+<summary>
+   Labs on Synthesis mismatch for blocking statement
+</summary>
+  
+</details>
+
+# Day 5 - If, case, for loop and for generate
+
+<details>
+  <summary>
+    If case constructs
+  </summary>
+</details>
+
+<details>
+<summary>
+  Labs on Incomplete overlapping case
+</summary>
+  
+</details>
+
+<details>
+<summary>
+   Labs on "for loop and ""for generate"
+</summary>
+  
+</details>
+
+
+
