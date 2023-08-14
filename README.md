@@ -119,6 +119,13 @@ gtkwave tb_good_mux.vcd
 ```
 ![Screenshot from 2023-08-14 11-30-52](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/18802ea8-70f2-4212-89f8-f12b192a9286)
 
+</details>
+
+<details>
+<summary>
+  Introduction to Yosys
+</summary>
+
 # Synthesizer
 RTL synthesizer primary responsibility is to convert the code into the gate-level netlist. This is a automated process; a tool has all the standard libraries definitions that can manipulate the respective gate-level netlist, which is an equivalent of your design in RTL. Synthesize tools can also do circuit optimization, power estimation, as well as timing analysis. Here we will use YOSYS as a synthesizer.
 
@@ -133,14 +140,7 @@ So based on our requirement we use different flavours of cell.
 
 a) Faster the cells lesser is the delay, but for that we need wider transistors so the power dissipation will be more too.So faster cells donot come free,they come at penalty of area and power.More use of faster cell will result in bad circuit with large area and power dissipation.
 
-b) slower cells are used at non-critical path where we donot require high performance where delay is not an issue so our power dissipation and area will also be minimum. But more use of slower cells will make our circuit sluggish
-
-</details>
-
-<details>
-<summary>
-  Introduction to Yosys
-</summary>
+b) slower cells are used at non-critical path where we donot require high performance where delay is not an issue so our power dissipation and area will also be minimum. But more use of slower cells will make our circuit sluggish.
 
 # Synthesis
 synthesis is used for converting the RTL level design to gate level design. The design are converted into gates and the connections are made between the gates and hence this file is gaiven out as a file called Netlist.
