@@ -417,19 +417,37 @@ endmodule
 ```
 ![Screenshot from 2023-08-15 21-42-34](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/0431713f-6fff-4827-b574-4e797fdfd6d4)
 
-	
+Example 4:
+
+```
+	module dff_const4(input clk, input reset, output reg q);
+	reg q1;
+
+	always @(posedge clk, posedge reset)
+	begin
+		if(reset)
+		begin
+			q <= 1'b1;
+			q1 <= 1'b1;
+		end
+	else
+		begin
+			q1 <= 1'b1;
+			q <= q1;
+		end
+	end
+	endmodule
+```
+![Screenshot from 2023-08-15 21-45-45](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/89126c61-0537-4ed2-a187-e99fc7e7b928)
+
 </details>
 
-<details>
-<summary>
-  Sequential Optimizations for unused Outputs
-</summary>
 
  
   
  
 
-</details>
+
 
 
 # Day 4 - GLS, Blocking vs Non Blocking and synthesis simulation mismatch
