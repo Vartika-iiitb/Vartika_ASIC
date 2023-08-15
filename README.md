@@ -449,7 +449,9 @@ Example 4:
   <summary>
     GLS, synthesis simulation mismatch and blocking/ nonblocking statements
   </summary>
+	
 What is GLS?
+
 Gate Level Synthesis is used for running the test bench with netlist as design under test. It is logically same as HIL Code. It uses the same test bench that will align with the design.
 
  Why GLS?
@@ -467,7 +469,18 @@ Gate Level Synthesis is used for running the test bench with netlist as design u
 <summary>
   Labs on GLS, synthesis simulation mismatch
 </summary>
-  
+  Missing Sensitivity Test
+
+ ```
+always @(sel)
+begin
+if (sel)
+ out = i1;
+else
+ out = i0;
+end
+```
+
 </details>
 
 <details>
