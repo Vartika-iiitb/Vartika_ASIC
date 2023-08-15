@@ -510,7 +510,19 @@ Synthesis
 <summary>
    Labs on Synthesis mismatch for blocking statement
 </summary>
-  
+  Command:
+	
+```
+module blocking_caveat (input a , input b , input  c, output reg d); 
+reg x;
+always @ (*)
+begin
+d = x & c;
+x = a | b;
+end
+endmodule
+```
+
 </details>
 
 # Day 5 - If, case, for loop and for generate
