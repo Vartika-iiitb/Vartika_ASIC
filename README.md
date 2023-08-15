@@ -266,7 +266,54 @@ This is the flattened Netlist which is being shown below:
 <summary>
   Various flop coding styles and optimizations
 </summary>
+
+   # Why Flops?
+
+  Flip flops are the fundamental blocks of most sequential circuits. It is also known as a bistable multivibrator or a binary or one-bit memory. Flip-flops are used as memory elements in sequential circuit. The output is obtained in a sequential circuit from combinational circuit or flip-flop or both.
+  In digital circuits every component has a propagation delay which can cause *Glitch* so to avoid that delay we use flops to store the value.
+  # Glitch
+  In electronics design, glitch refers to unnecessary signal transitions in a combinational circuit, while glitch power refers to the power consumed by glitches. The extra switching activity can lead to up to 40% of additional dynamic power consumption.
+
+   ![WhatsApp Image 2023-08-15 at 19 13 14](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/9fadb789-c0fb-4dd7-804d-24675f9814a6)
   
+1. Asynchronous reset
+   ```
+    module dff_asyncres ( input clk ,  input async_reset , input d , output reg q );
+always @ (posedge clk , posedge async_reset)
+begin
+	if(async_reset)
+		q <= 1'b0;
+	else	
+		q <= d;
+end
+endmodule
+```
+The Following fig. shows the Simulation of Asynchronous reset.
+
+![Screenshot from 2023-08-15 20-07-37](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/707442ba-f0cd-4e38-9809-91c67ac7feed)
+
+2. Synchronous Reset
+
+```
+module dff_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );
+always @ (posedge clk )
+begin
+	if (sync_reset)
+		q <= 1'b0;
+	else	
+		q <= d;
+end
+endmodule
+```
+The Following fig. shows the Simulation of Synchronous reset:
+
+![Screenshot from 2023-08-15 20-10-36](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/f50c329e-ee08-447c-8caf-0e8d548a0500)
+
+It's netlist is shown below:
+
+![Screenshot from 2023-08-15 20-12-24](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/9c71d65f-70fc-4be7-beb8-eeca50dfa66c)
+
+
 </details>
 
 # Day 3 - Combinational and Sequential Optimizations
@@ -295,8 +342,13 @@ This is the flattened Netlist which is being shown below:
 <summary>
   Sequential Optimizations for unused Outputs
 </summary>
+
+ 
   
+ 
+
 </details>
+
 
 # Day 4 - GLS, Blocking vs Non Blocking and synthesis simulation mismatch
 
