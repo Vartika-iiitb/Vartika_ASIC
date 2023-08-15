@@ -470,6 +470,7 @@ Gate Level Synthesis is used for running the test bench with netlist as design u
   Labs on GLS, synthesis simulation mismatch
 </summary>
   Missing Sensitivity Test
+  It search for an activity to happen in order to get activated.
 
  ```
 always @(sel)
@@ -480,6 +481,19 @@ else
  out = i0;
 end
 ```
+
+![WhatsApp Image 2023-08-15 at 22 09 06](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/fa6620c0-76d5-4cbc-8b42-ac464938f098)
+
+Blocking and Non Blocking Statements:
+
+*Inside always Block*
+= --> Blocking
+It executes the statement in the order it has been written. so the statement which is written first will be considered and executed first.
+
+<= --> Non Blocking
+When always block is entered,It executes all the RHS and assign it to LHS. It does Parallel Evaluation.
+
+![WhatsApp Image 2023-08-15 at 22 13 35](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/ce5a8c50-86da-44c3-be1b-e6237eebe544)
 
 </details>
 
