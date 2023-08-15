@@ -1,4 +1,4 @@
-# Vartika_Tapeout_Process
+"# Vartika_Tapeout_Process
 
 This Github Repository demonstrates the procedures and steps which is being followed during the Tapeout Process.
 
@@ -657,7 +657,7 @@ Synthesis:
 
 <details>
 <summary>
-   Labs on "for loop and ""for generate"
+   Labs on "for loop" and "for generate"
 </summary>
   Example 1: Mux using Generate
 Command:
