@@ -278,8 +278,8 @@ This is the flattened Netlist which is being shown below:
    ![WhatsApp Image 2023-08-15 at 19 13 14](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/9fadb789-c0fb-4dd7-804d-24675f9814a6)
   
 1. Asynchronous reset
-   
-    module dff_asyncres ( input clk ,  input async_reset , input d , output reg q );
+ ```  
+module dff_asyncres ( input clk ,  input async_reset , input d , output reg q );
 always @ (posedge clk , posedge async_reset)
 begin
 	if(async_reset)
@@ -288,7 +288,7 @@ begin
 		q <= d;
 end
 endmodule
-
+```
 
 The Following fig. shows the Simulation of Asynchronous reset.
 ![Screenshot from 2023-08-15 20-07-37](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/7fa5d391-ba79-4b40-be98-8ee0b3465912)
@@ -298,7 +298,7 @@ The Following fig. shows the Simulation of Asynchronous reset.
 
 2. Synchronous Reset
 
-
+```
 module dff_syncres ( input clk , input async_reset , input sync_reset , input d , output reg q );
 always @ (posedge clk )
 begin
@@ -308,7 +308,7 @@ begin
 		q <= d;
 end
 endmodule
-
+```
 
 The Following fig. shows the Simulation of Synchronous reset:
 ![Screenshot from 2023-08-15 20-10-36](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/c7f3089c-eb9a-44ea-aae0-8e04ed929d42)
