@@ -322,24 +322,102 @@ It's netlist is shown below:
 
 # Day 3 - Combinational and Sequential Optimizations
 
-<details>
-  <summary>
-    Introduction to Optimizations
-  </summary>
-</details>
 
 <details>
 <summary>
   Combinational Logic Optimizations
 </summary>
-  
+ Example 1:
+
+ ```
+module opt_check (input a , input b , output y);
+	assign y = a?b:0;
+endmodule
+```
+Synthesis
+
+![Screenshot from 2023-08-15 21-27-49](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/e428fa58-b9c1-4cd2-8d59-1abdf908bdbe)
+
+![WhatsApp Image 2023-08-15 at 21 31 23](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/7005b0d6-9aa3-49b9-9e26-e34d8968ce35)
+
+Example 2:
+
+```
+module opt_check2 (input a , input b , output y);
+	assign y = a?1:b;
+endmodule
+```
+![Screenshot from 2023-08-15 21-33-46](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/42a8245a-99d8-4b08-96a6-b823aa6cc5c3)
+
+Example 3:
+```
+module opt_check3 (input a , input b, input c , output y);
+	assign y = a?(c?b:0):0;
+endmodule
+```
+![Screenshot from 2023-08-15 21-34-40](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/6578e09d-8bc3-4ced-8dec-5241bf4c71a1)
+
 </details>
 
 <details>
 <summary>
    Sequential Logic Optimizations
 </summary>
+	
+  Example 1:
   
+  ```
+module dff_const1(input clk, input reset, output reg q);
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+		q <= 1'b0;
+	else
+		q <= 1'b1;
+end
+endmodule
+```
+
+![Screenshot from 2023-08-15 21-36-57](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/7e6234e6-3561-408d-a7b7-b47052298513)
+
+Example 2:
+
+```
+module dff_const2(input clk, input reset, output reg q);
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+		q <= 1'b1;
+	else
+		q <= 1'b1;
+end
+endmodule
+```
+![Screenshot from 2023-08-15 21-40-53](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/1f84b728-b6e6-40da-94b3-f66e2de9256d)
+
+Example 3:
+
+```
+module dff_const5(input clk, input reset, output reg q);
+reg q1;
+always @(posedge clk, posedge reset)
+	begin
+		if(reset)
+		begin
+			q <= 1'b0;
+			q1 <= 1'b0;
+		end
+	else
+		begin
+			q1 <= 1'b1;
+			q <= q1;
+		end
+	end
+endmodule
+```
+![Screenshot from 2023-08-15 21-42-34](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/0431713f-6fff-4827-b574-4e797fdfd6d4)
+
+	
 </details>
 
 <details>
