@@ -607,6 +607,7 @@ Synthesis:
 </summary>
   Example 1:
 	MUX using For
+	
 ```
 	module incomp_case (input i0 , input i1 , input i2 , input [1:0] sel, output reg y);
 	always @ (*)
@@ -618,6 +619,7 @@ Synthesis:
 	end
 endmodule
 ```
+
 Simulation:
 
  ![Screenshot from 2023-08-15 23-07-06](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/53bb46a0-59d8-4f14-bffd-8088cc83449c)
