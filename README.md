@@ -443,19 +443,24 @@ Example 4:
 </details>
 
 
- 
-  
- 
-
-
-
-
 # Day 4 - GLS, Blocking vs Non Blocking and synthesis simulation mismatch
 
 <details>
   <summary>
     GLS, synthesis simulation mismatch and blocking/ nonblocking statements
   </summary>
+What is GLS?
+Gate Level Synthesis is used for running the test bench with netlist as design under test. It is logically same as HIL Code. It uses the same test bench that will align with the design.
+
+ Why GLS?
+ 1. It verifies the Logical correctness of design after synthesis.
+ 2. It Ensures the timimng of the design is being met.
+ 3. GLS should be run with design annotation.
+
+    Following figure shows the correct path of the GLS design:
+![Screenshot from 2023-08-15 21-59-22](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/9901a307-d5f3-4ee9-a72b-ff00b1da4a7e)
+
+    
 </details>
 
 <details>
