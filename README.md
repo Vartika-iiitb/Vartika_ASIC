@@ -685,11 +685,10 @@ Synthesis:
 
 # References
 
-<details>
 <summary>
 https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop  
 https://github.com/YosysHQ/yosys.git
 https://www.vsdiat.com/
 </summary>
-</details>
+
 
