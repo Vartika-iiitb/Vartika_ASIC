@@ -495,6 +495,15 @@ When always block is entered,It executes all the RHS and assign it to LHS. It do
 
 ![WhatsApp Image 2023-08-15 at 22 13 35](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/ce5a8c50-86da-44c3-be1b-e6237eebe544)
 
+Simulation
+This is the gtkwave simulation of using ternary operator of mux:
+
+![Screenshot from 2023-08-15 22-30-41](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/6de3d4e8-b45c-4169-96c7-21acfccd724a)
+
+Synthesis
+
+![Screenshot from 2023-08-15 22-35-27](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/1d2245c0-0c80-493c-8402-c8b5bb043457)
+
 </details>
 
 <details>
