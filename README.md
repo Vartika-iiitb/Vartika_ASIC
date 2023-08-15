@@ -675,11 +675,47 @@ always @ (*)
 endmodule
 ```
 Gtkwave Simulation:
+
 ![Screenshot from 2023-08-15 23-17-14](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/7510ed9b-4511-42a0-b5e5-56380ef49016)
 
 
 Synthesis:
+
 ![Screenshot from 2023-08-15 23-15-34](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/acfecafc-2350-473c-bf52-34fc44e53c7f)
+
+Example 2: Demux using case
+command:
+```
+module demux_case (output o0 , output o1, output o2 , output o3, output o4, output o5, output o6 , output o7 , input [2:0] sel  , input i);
+reg [7:0]y_int;
+assign {o7,o6,o5,o4,o3,o2,o1,o0} = y_int;
+integer k;
+always @ (*)
+begin
+y_int = 8'b0;
+case(sel)
+	3'b000 : y_int[0] = i;
+	3'b001 : y_int[1] = i;
+	3'b010 : y_int[2] = i;
+	3'b011 : y_int[3] = i;
+	3'b100 : y_int[4] = i;
+	3'b101 : y_int[5] = i;
+	3'b110 : y_int[6] = i;
+	3'b111 : y_int[7] = i;
+endcase
+end
+endmodule
+```
+
+Simulation:
+
+![Screenshot from 2023-08-15 23-22-19](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/20e5fbe6-7b9a-4c3a-9776-fd510b0d0546)
+
+Synthesis:
+
+
+![Screenshot from 2023-08-15 23-23-17](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/aa782e8c-1730-4433-86cd-48f12add9938)
+
 
 </details>
 
