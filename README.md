@@ -214,7 +214,27 @@ In the following example, inside the Lib file there are 2^5 (32) possible combin
 <summary>
   Hierarchical vs Flat synthesis
 </summary>
-  
+# Hierarchical Synthesis
+
+A hierarchical design approach divides the ASIC into smaller and simpler modules or blocks, each with its own functionality and interface, and then connects them by a top-level structure that defines the overall behavior and performance of the ASIC.
+
+Multiple module
+
+  ![Screenshot from 2023-08-15 16-34-42](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/63a8a571-e764-45eb-b799-4aa82820f168)
+
+The internal connections of the above module is represented as:
+![WhatsApp Image 2023-08-15 at 16 26 59](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/44e96bc9-c59d-45b4-b5ca-06078ffcf9d0)
+
+The yosys synthesizer represented the following schematic in the following way:
+![Screenshot from 2023-08-15 16-47-10](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/bcf594f7-33ca-4ca6-95a1-eb945fe299ec)
+
+
+![Screenshot from 2023-08-15 16-49-31](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/83922884-6165-4a67-ad02-9605995e7fa6)
+
+The hierarchical netlist code for the multiple_modules is shown below:
+![Screenshot from 2023-08-15 17-23-07](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/5daa25f3-ad15-4a8a-8005-8149a3f477f3)
+
+
 </details>
 
 <details>
