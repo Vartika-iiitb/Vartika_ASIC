@@ -531,6 +531,74 @@ endmodule
   <summary>
     If case constructs
   </summary>
+	 
+If
+=
+if is generally used to create the priority logic.
+
+```
+if (<condition 1>)
+begin
+-----------
+-----------
+end
+else if (<condition 2>)
+begin
+-----------
+-----------
+end
+else if (<condition 3>)
+.
+.
+.
+```
+This if condition can be depicted as:
+
+![WhatsApp Image 2023-08-15 at 22 47 44](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/2048e39d-ac92-4506-ada4-c41cf4a70615)
+
+Danger with if
+=
+it is due to bad coding style. for eg if we doesnot end the if else case by the else statement then it may retain the value of Y which will ultimately be the undesired output.
+This is known as Inferred Latch, it happens because of incomplete if.
+
+![Screenshot from 2023-08-15 22-55-15](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/75fbd440-173c-43a1-9438-fbbede380ae2)
+Here counter is an exception.
+
+For Case construct
+
+```
+case(statement)
+  case1: begin
+       
+
+	 end
+ case2: begin
+	     
+	 
+	 end
+ default:
+ endcase
+```
+Example of Incomplete If:
+
+```
+module incomp_if2 (input i0 , input i1 , input i2 , input i3, output reg y);
+always @ (*)
+begin
+	if(i0)
+		y <= i1;
+	else if (i2)
+		y <= i3;
+end
+endmodule
+```
+
+RTL gtkwave Simulation is shown in the Screenshot below:
+![Screenshot from 2023-08-15 22-58-31](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/52792b7c-c9cf-49cd-96d9-f8a3f2d0cadc)
+
+Synthesis:
+![Screenshot from 2023-08-15 22-58-56](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/96e95556-d172-470a-a5cd-ee1c1b226afb)
+
 </details>
 
 <details>
