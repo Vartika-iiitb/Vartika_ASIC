@@ -659,6 +659,8 @@ Synthesis:
 <summary>
    Labs on "for loop" and "for generate"
 </summary>
+
+ 
   Example 1: Mux using Generate
 Command:
 
