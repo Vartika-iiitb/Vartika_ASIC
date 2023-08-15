@@ -657,18 +657,39 @@ Synthesis:
 <summary>
    Labs on "for loop and ""for generate"
 </summary>
-  
+  Example 1: Mux using Generate
+Command:
+
+```
+module mux_generate (input i0 , input i1, input i2 , input i3 , input [1:0] sel  , output reg y);
+	wire [3:0] i_int;
+	assign i_int = {i3,i2,i1,i0};
+	integer k;
+always @ (*)
+	begin
+	for(k = 0; k < 4; k=k+1) begin
+		if(k == sel)
+		y = i_int[k];
+		end
+	end
+endmodule
+```
+Gtkwave Simulation:
+![Screenshot from 2023-08-15 23-17-14](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/7510ed9b-4511-42a0-b5e5-56380ef49016)
+
+
+Synthesis:
+![Screenshot from 2023-08-15 23-15-34](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/acfecafc-2350-473c-bf52-34fc44e53c7f)
+
 </details>
 
 # References
 
+<details>
 <summary>
-https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop
-  
+https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop  
 https://github.com/YosysHQ/yosys.git
-
 https://www.vsdiat.com/
 </summary>
-
-
+</details>
 
