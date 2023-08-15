@@ -605,7 +605,52 @@ Synthesis:
 <summary>
   Labs on Incomplete overlapping case
 </summary>
-  
+  Example 1:
+	MUX using For
+```
+	module incomp_case (input i0 , input i1 , input i2 , input [1:0] sel, output reg y);
+	always @ (*)
+	begin
+	case(sel)
+		2'b00 : y = i0;
+		2'b01 : y = i1;
+	endcase
+	end
+endmodule
+```
+Simulation:
+
+ ![Screenshot from 2023-08-15 23-07-06](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/53bb46a0-59d8-4f14-bffd-8088cc83449c)
+
+ Synthesis:
+ 
+ ![Screenshot from 2023-08-15 23-08-02](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/cda6fb15-32a3-45b3-a61e-94f23ad99166)
+
+Example 2:
+Demux
+```
+module demux_generate (output o0 , output o1, output o2 , output o3, output o4, output o5, output o6 , output 				o7 , input [2:0] sel  , input i);
+reg [7:0]y_int;
+assign {o7,o6,o5,o4,o3,o2,o1,o0} = y_int;
+integer k;
+always @ (*)
+begin
+y_int = 8'b0;
+for(k = 0; k < 8; k++) begin
+	if(k == sel)
+	y_int[k] = i;
+end
+end
+endmodule
+
+```
+Simulation:
+![Screenshot from 2023-08-15 23-10-31](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/ba03eb40-9e86-4c46-94f2-86d8e2c5e262)
+
+Synthesis:
+
+![Screenshot from 2023-08-15 23-11-42](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/b96a2e67-a9c6-4a4b-a729-9e3511d2268c)
+
 </details>
 
 <details>
