@@ -214,9 +214,10 @@ In the following example, inside the Lib file there are 2^5 (32) possible combin
 <summary>
   Hierarchical vs Flat synthesis
 </summary>
+  
 # Hierarchical Synthesis
 
-A hierarchical design approach divides the ASIC into smaller and simpler modules or blocks, each with its own functionality and interface, and then connects them by a top-level structure that defines the overall behavior and performance of the ASIC.
+A hierarchical design approach divides the ASIC into smaller and simpler modules or blocks, each with its own functionality and interface, and then connects them by a top-level structure that defines the overall behavior and performance of the ASIC. Since pins of submodules are accessible, it's easier to track paths for functional debugging and timing analysis. Pins can be forced or probed in post-synthesis simulations.
 
 Multiple module
 
@@ -233,6 +234,30 @@ The yosys synthesizer represented the following schematic in the following way:
 
 The hierarchical netlist code for the multiple_modules is shown below:
 ![Screenshot from 2023-08-15 17-23-07](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/5daa25f3-ad15-4a8a-8005-8149a3f477f3)
+
+# Flattened Netlist
+
+In a "flat" design, only primitives are instanced. Hierarchical designs can be recursively "exploded" ("flattened") by creating a new copy (with a new name) of each definition each time it is used. If the design is highly folded, expanding it like this will result in a much larger netlist database, but preserves the hierarchy dependencies. Given a hierarchical netlist, the list of instance names in a path from the root definition to a primitive instance specifies the single unique path to that primitive.
+Command to flatten the netlist is given below:
+
+```
+flatten
+write_verilog multiple_modules_flat.v
+!gvim multiple_modules_flat.v
+
+```
+![Screenshot from 2023-08-15 18-42-30](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/ea265189-8746-4c80-b4d1-d51694595b33)
+
+Command for getting the synthesized netlist is given below:
+```
+flatten
+write_verilog -noattr multiple_modules_flat.v
+!gvim multiple_modules_flat.v
+
+```
+
+This is the flattened Netlist which is being shown below:
+![Screenshot from 2023-08-15 18-46-50](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/d83a3d95-095c-419d-91f0-a7dfa0c4871c)
 
 
 </details>
