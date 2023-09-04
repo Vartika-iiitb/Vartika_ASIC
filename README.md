@@ -100,7 +100,7 @@ sudo make install
 
 <details>
 	<summmary>
-		Magic
+Magic
 	</summmary>
 	Magic is a popular open-source tool used in the field of ASIC (Application-Specific Integrated Circuit) and custom digital integrated circuit design. Magic is primarily used for physical layout design, editing, and verification of integrated circuits. Here's an overview of what the Magic tool is used for in ASIC design:
 	1. Physical Layout Design
