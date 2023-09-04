@@ -1,4 +1,4 @@
-"# Vartika_Tapeout_Process
+# Vartika_Tapeout_Process
 
 This Github Repository demonstrates the procedures and steps which is being followed during the Tapeout Process.
 
@@ -71,6 +71,32 @@ sudo apt-get install iverilog
     
   
 </details>
+
+<details>
+  <summary>
+	  
+  **OpenSTA**
+	  
+  </summary>
+OpenSTA, short for "Open System Testing Architecture," is an open-source software testing tool designed for performance and stress testing of web applications. It provides a framework for conducting load testing, stress testing, and performance testing on web-based applications and services. OpenSTA was originally developed by CYRANO, a French company, and later released as open-source software.
+
+I installed the OpenSTA using the following command.
+```
+sudo apt-get install cmake clang gcc tcl swig bison flex
+```
+
+ After installing the dependencies, following command is being used for installing OpenSTA.
+ ```
+git clone https://github.com/The-OpenROAD-Project/OpenSTA.git
+cd OpenSTA
+mkdir build
+cd build
+cmake ..
+make
+sudo make install
+```
+
+![Screenshot from 2023-09-04 11-38-47](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/ccb6d1ab-eaa4-4e75-a848-216443d85233)
 
 # WEEK 2
 
