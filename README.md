@@ -74,10 +74,8 @@ sudo apt-get install iverilog
 
 <details>
   <summary>
-	  
-  **OpenSTA**
-	  
-  </summary>
+   OpenSTA
+</summary>
 OpenSTA, short for "Open System Testing Architecture," is an open-source software testing tool designed for performance and stress testing of web applications. It provides a framework for conducting load testing, stress testing, and performance testing on web-based applications and services. OpenSTA was originally developed by CYRANO, a French company, and later released as open-source software.
 
 I installed the OpenSTA using the following command.
@@ -98,6 +96,84 @@ sudo make install
 
 ![Screenshot from 2023-09-04 11-38-47](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/ccb6d1ab-eaa4-4e75-a848-216443d85233)
 
+</details>
+
+<details>
+	<summmary>
+		Magic
+	</summmary>
+	Magic is a popular open-source tool used in the field of ASIC (Application-Specific Integrated Circuit) and custom digital integrated circuit design. Magic is primarily used for physical layout design, editing, and verification of integrated circuits. Here's an overview of what the Magic tool is used for in ASIC design:
+	1. Physical Layout Design
+	2. Mask Layout Editing
+	3. Design rule checking
+	4. Extraction
+	5. Viewing and Visualisation
+	6. Interoperability
+	7. custom Layouts
+	8. Scripting and Automation
+ 
+	
+ **Commands to install Magic :**
+ ```
+ sudo apt-get install m4
+sudo apt-get install tcsh
+sudo apt-get install csh
+sudo apt-get install libx11-dev
+sudo apt-get install tcl-dev tk-dev
+sudo apt-get install libcairo2-dev
+sudo apt-get install mesa-common-dev libglu1-mesa-dev
+sudo apt-get install libncurses-dev
+git clone https://github.com/RTimothyEdwards/magic
+cd magic
+./configure
+make
+sudo make install
+```
+
+![Screenshot from 2023-09-04 13-53-42](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/5d559974-8b3b-4973-aa25-a125fd6e6d2c)
+
+</details>
+<details>
+	<summary>
+		OPENLANE
+	</summary>
+OpenLANE is an open-source ASIC (Application-Specific Integrated Circuit) design flow and automation tool. It is designed to streamline the process of designing and fabricating custom digital integrated circuits. OpenLANE provides a comprehensive set of tools, scripts, and methodologies to automate various stages of the ASIC design flow. 
+```
+	sudo apt-get update
+sudo apt-get upgrade
+sudo apt install -y build-essential python3 python3-venv python3-pip make git
+```
+	
+Docker Installation:
+```
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+sudo apt update
+sudo apt install docker-ce docker-ce-cli containerd.io
+sudo docker run hello-world
+
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo reboot 
+
+
+# Check for installation
+sudo docker run hello-world
+```
+
+**Steps to installOpenlane PDKs and Tools**
+
+```
+cd $HOME
+git clone https://github.com/The-OpenROAD-Project/OpenLane
+cd OpenLane
+make
+make test
+```
+ 
 </details>
 
 # WEEK 2
