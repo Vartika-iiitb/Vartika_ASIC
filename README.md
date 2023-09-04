@@ -98,6 +98,8 @@ sudo make install
 
 ![Screenshot from 2023-09-04 11-38-47](https://github.com/Vartika-iiitb/Vartika_ASIC/assets/140998716/ccb6d1ab-eaa4-4e75-a848-216443d85233)
 
+</details>
+
 # WEEK 2
 
 # Day 1: Introduction to Icarus Verilog and Yosys
